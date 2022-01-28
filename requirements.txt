@@ -3,6 +3,7 @@ tqdm
 pandas
 numpy
 PyYAML
+tensorflow-gpu
 
 ### local packages -
 # -e . # << uncomment this to install from setup.py

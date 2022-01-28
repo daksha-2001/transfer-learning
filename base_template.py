@@ -18,10 +18,10 @@ logging.basicConfig(
     )
 
 
-def main(config_path, params_path):
+def main(config_path):
     ## read config files
     config = read_yaml(config_path)
-    params = read_yaml(params_path)
+    
     pass
     ## get the data
     (X_train_full, y_train_full), (X_test, y_test) = tf.keras.datasets.mnist.load_data()
@@ -72,7 +72,7 @@ if __name__ == '__main__':
     try:
         logging.info("\n********************")
         logging.info(f">>>>> stage {STAGE} started <<<<<")
-        main(config_path=parsed_args.config, params_path=parsed_args.params)
+        main(config_path=parsed_args.config)
         logging.info(f">>>>> stage {STAGE} completed!<<<<<\n")
         
     except Exception as e:

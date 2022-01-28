@@ -1,0 +1,53 @@
+[2022-01-28 22:42:56,065: INFO: base_template]: 
+********************
+[2022-01-28 22:42:56,065: INFO: base_template]: >>>>> stage Prepare_Base_Model started <<<<<
+[2022-01-28 22:42:56,066: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2022-01-28 22:42:56,066: ERROR: base_template]: [Errno 2] No such file or directory: 'params.yaml'
+Traceback (most recent call last):
+  File "base_template.py", line 75, in <module>
+    main(config_path=parsed_args.config, params_path=parsed_args.params)
+  File "base_template.py", line 24, in main
+    params = read_yaml(params_path)
+  File "A:\Transfer-Learning\transfer-learning\src\utils\common.py", line 8, in read_yaml
+    with open(path_to_yaml) as yaml_file:
+FileNotFoundError: [Errno 2] No such file or directory: 'params.yaml'
+[2022-01-28 22:45:34,429: INFO: base_template]: 
+********************
+[2022-01-28 22:45:34,429: INFO: base_template]: >>>>> stage Prepare_Base_Model started <<<<<
+[2022-01-28 22:45:34,430: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2022-01-28 22:45:34,430: ERROR: base_template]: [Errno 2] No such file or directory: 'params.yaml'
+Traceback (most recent call last):
+  File "base_template.py", line 75, in <module>
+    main(config_path=parsed_args.config, params_path=parsed_args.params)
+  File "base_template.py", line 24, in main
+    params = read_yaml(params_path)
+  File "A:\Transfer-Learning\transfer-learning\src\utils\common.py", line 8, in read_yaml
+    with open(path_to_yaml) as yaml_file:
+FileNotFoundError: [Errno 2] No such file or directory: 'params.yaml'
+[2022-01-28 22:46:09,809: INFO: base_template]: 
+********************
+[2022-01-28 22:46:09,809: INFO: base_template]: >>>>> stage Prepare_Base_Model started <<<<<
+[2022-01-28 22:46:09,809: ERROR: base_template]: main() missing 1 required positional argument: 'params_path'
+Traceback (most recent call last):
+  File "base_template.py", line 75, in <module>
+    main(config_path=parsed_args.config)
+TypeError: main() missing 1 required positional argument: 'params_path'
+[2022-01-28 22:46:39,747: INFO: base_template]: 
+********************
+[2022-01-28 22:46:39,747: INFO: base_template]: >>>>> stage Prepare_Base_Model started <<<<<
+[2022-01-28 22:46:39,748: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2022-01-28 22:46:39,748: ERROR: base_template]: name 'params_path' is not defined
+Traceback (most recent call last):
+  File "base_template.py", line 75, in <module>
+    main(config_path=parsed_args.config)
+  File "base_template.py", line 24, in main
+    params = read_yaml(params_path)
+NameError: name 'params_path' is not defined
+[2022-01-28 22:47:23,985: INFO: base_template]: 
+********************
+[2022-01-28 22:47:23,986: INFO: base_template]: >>>>> stage Prepare_Base_Model started <<<<<
+[2022-01-28 22:47:23,986: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2022-01-28 22:48:00,456: INFO: common]: created directory at: artifacts\models
+[2022-01-28 22:48:00,534: INFO: base_template]: base model is saved at artifacts\models\base_model.h5
+[2022-01-28 22:48:00,539: INFO: base_template]: >>>>> stage Prepare_Base_Model completed!<<<<<
+
