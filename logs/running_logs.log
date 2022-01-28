@@ -51,3 +51,175 @@ NameError: name 'params_path' is not defined
 [2022-01-28 22:48:00,534: INFO: base_template]: base model is saved at artifacts\models\base_model.h5
 [2022-01-28 22:48:00,539: INFO: base_template]: >>>>> stage Prepare_Base_Model completed!<<<<<
 
+[2022-01-29 00:06:05,222: INFO: transfer_leraning]: 
+********************
+[2022-01-29 00:06:05,222: INFO: transfer_leraning]: >>>>> stage STAGE_NAME started <<<<<
+[2022-01-29 00:06:05,222: ERROR: transfer_leraning]: main() got an unexpected keyword argument 'params_path'
+Traceback (most recent call last):
+  File ".\transfer_leraning.py", line 41, in <module>
+    main(config_path=parsed_args.config, params_path=parsed_args.params)
+TypeError: main() got an unexpected keyword argument 'params_path'
+[2022-01-29 00:06:35,677: INFO: transfer_leraning]: 
+********************
+[2022-01-29 00:06:35,677: INFO: transfer_leraning]: >>>>> stage STAGE_NAME started <<<<<
+[2022-01-29 00:06:35,677: ERROR: transfer_leraning]: main() got an unexpected keyword argument 'params_path'
+Traceback (most recent call last):
+  File ".\transfer_leraning.py", line 41, in <module>
+    main(config_path=parsed_args.config, params_path=parsed_args.params)
+TypeError: main() got an unexpected keyword argument 'params_path'
+[2022-01-29 00:06:48,907: INFO: transfer_leraning]: 
+********************
+[2022-01-29 00:06:48,907: INFO: transfer_leraning]: >>>>> stage STAGE_NAME started <<<<<
+[2022-01-29 00:06:48,908: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2022-01-29 00:06:49,061: ERROR: transfer_leraning]: 'str' object has no attribute 'decode'
+Traceback (most recent call last):
+  File ".\transfer_leraning.py", line 41, in <module>
+    main(config_path=parsed_args.config)
+  File ".\transfer_leraning.py", line 28, in main
+    base_model=tf.keras.models.load_model(path_moodel)
+  File "C:\Users\JAY AND DAKSHA\anaconda3\envs\gpuenv\lib\site-packages\tensorflow_core\python\keras\saving\save.py", line 146, in load_model
+    return hdf5_format.load_model_from_hdf5(filepath, custom_objects, compile)
+  File "C:\Users\JAY AND DAKSHA\anaconda3\envs\gpuenv\lib\site-packages\tensorflow_core\python\keras\saving\hdf5_format.py", line 166, in load_model_from_hdf5
+    model_config = json.loads(model_config.decode('utf-8'))
+AttributeError: 'str' object has no attribute 'decode'
+[2022-01-29 00:08:50,277: INFO: transfer_leraning]: 
+********************
+[2022-01-29 00:08:50,277: INFO: transfer_leraning]: >>>>> stage STAGE_NAME started <<<<<
+[2022-01-29 00:08:50,278: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2022-01-29 00:08:50,304: ERROR: transfer_leraning]: 'str' object has no attribute 'decode'
+Traceback (most recent call last):
+  File ".\transfer_leraning.py", line 41, in <module>
+    main(config_path=parsed_args.config)
+  File ".\transfer_leraning.py", line 28, in main
+    base_model = tf.keras.models.load_model(base_model_path)
+  File "C:\Users\JAY AND DAKSHA\anaconda3\envs\gpuenv\lib\site-packages\tensorflow_core\python\keras\saving\save.py", line 146, in load_model
+    return hdf5_format.load_model_from_hdf5(filepath, custom_objects, compile)
+  File "C:\Users\JAY AND DAKSHA\anaconda3\envs\gpuenv\lib\site-packages\tensorflow_core\python\keras\saving\hdf5_format.py", line 166, in load_model_from_hdf5
+    model_config = json.loads(model_config.decode('utf-8'))
+AttributeError: 'str' object has no attribute 'decode'
+[2022-01-29 00:10:25,230: INFO: transfer_leraning]: 
+********************
+[2022-01-29 00:10:25,230: INFO: transfer_leraning]: >>>>> stage STAGE_NAME started <<<<<
+[2022-01-29 00:10:25,231: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2022-01-29 00:10:25,246: ERROR: transfer_leraning]: 'str' object has no attribute 'decode'
+Traceback (most recent call last):
+  File ".\transfer_leraning.py", line 42, in <module>
+    main(config_path=parsed_args.config)
+  File ".\transfer_leraning.py", line 28, in main
+    base_model = tf.keras.models.load_model(base_model_path)
+  File "C:\Users\JAY AND DAKSHA\anaconda3\envs\gpuenv\lib\site-packages\tensorflow_core\python\keras\saving\save.py", line 146, in load_model
+    return hdf5_format.load_model_from_hdf5(filepath, custom_objects, compile)
+  File "C:\Users\JAY AND DAKSHA\anaconda3\envs\gpuenv\lib\site-packages\tensorflow_core\python\keras\saving\hdf5_format.py", line 166, in load_model_from_hdf5
+    model_config = json.loads(model_config.decode('utf-8'))
+AttributeError: 'str' object has no attribute 'decode'
+[2022-01-29 00:11:55,027: INFO: transfer_leraning]: 
+********************
+[2022-01-29 00:11:55,027: INFO: transfer_leraning]: >>>>> stage transfer learning started <<<<<
+[2022-01-29 00:11:55,028: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2022-01-29 00:11:55,044: ERROR: transfer_leraning]: 'str' object has no attribute 'decode'
+Traceback (most recent call last):
+  File ".\transfer_leraning.py", line 80, in <module>
+    main(config_path=parsed_args.config)
+  File ".\transfer_leraning.py", line 30, in main
+    base_model = tf.keras.models.load_model(base_model_path)
+  File "C:\Users\JAY AND DAKSHA\anaconda3\envs\gpuenv\lib\site-packages\tensorflow_core\python\keras\saving\save.py", line 146, in load_model
+    return hdf5_format.load_model_from_hdf5(filepath, custom_objects, compile)
+  File "C:\Users\JAY AND DAKSHA\anaconda3\envs\gpuenv\lib\site-packages\tensorflow_core\python\keras\saving\hdf5_format.py", line 166, in load_model_from_hdf5
+    model_config = json.loads(model_config.decode('utf-8'))
+AttributeError: 'str' object has no attribute 'decode'
+[2022-01-29 00:14:11,759: INFO: transfer_leraning]: 
+********************
+[2022-01-29 00:14:11,759: INFO: transfer_leraning]: >>>>> stage STAGE_NAME started <<<<<
+[2022-01-29 00:14:11,760: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2022-01-29 00:14:11,778: ERROR: transfer_leraning]: 'str' object has no attribute 'decode'
+Traceback (most recent call last):
+  File ".\transfer_leraning.py", line 41, in <module>
+    main(config_path=parsed_args.config)
+  File ".\transfer_leraning.py", line 28, in main
+    base_model = tf.keras.models.load_model(base_model_path)
+  File "C:\Users\JAY AND DAKSHA\anaconda3\envs\gpuenv\lib\site-packages\tensorflow_core\python\keras\saving\save.py", line 146, in load_model
+    return hdf5_format.load_model_from_hdf5(filepath, custom_objects, compile)
+  File "C:\Users\JAY AND DAKSHA\anaconda3\envs\gpuenv\lib\site-packages\tensorflow_core\python\keras\saving\hdf5_format.py", line 166, in load_model_from_hdf5
+    model_config = json.loads(model_config.decode('utf-8'))
+AttributeError: 'str' object has no attribute 'decode'
+[2022-01-29 00:15:20,814: INFO: transfer_leraning]: 
+********************
+[2022-01-29 00:15:20,814: INFO: transfer_leraning]: >>>>> stage STAGE_NAME started <<<<<
+[2022-01-29 00:15:20,816: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2022-01-29 00:15:23,835: INFO: transfer_leraning]: >>>>> stage STAGE_NAME completed!<<<<<
+
+[2022-01-29 00:24:12,441: INFO: transfer_leraning]: 
+********************
+[2022-01-29 00:24:12,441: INFO: transfer_leraning]: >>>>> stage STAGE_NAME started <<<<<
+[2022-01-29 00:24:12,443: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2022-01-29 00:24:13,285: ERROR: transfer_leraning]: list indices must be integers or slices, not tuple
+Traceback (most recent call last):
+  File ".\transfer_leraning.py", line 48, in <module>
+    main(config_path=parsed_args.config)
+  File ".\transfer_leraning.py", line 32, in main
+    for layer in base_model.layers[:,-1]:
+TypeError: list indices must be integers or slices, not tuple
+[2022-01-29 00:24:55,106: INFO: transfer_leraning]: 
+********************
+[2022-01-29 00:24:55,106: INFO: transfer_leraning]: >>>>> stage STAGE_NAME started <<<<<
+[2022-01-29 00:24:55,108: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2022-01-29 00:24:55,941: ERROR: transfer_leraning]: name 'f' is not defined
+Traceback (most recent call last):
+  File ".\transfer_leraning.py", line 48, in <module>
+    main(config_path=parsed_args.config)
+  File ".\transfer_leraning.py", line 33, in main
+    print(f("after freezing{layer.name}:{layer.trainable}"))
+NameError: name 'f' is not defined
+[2022-01-29 00:25:16,086: INFO: transfer_leraning]: 
+********************
+[2022-01-29 00:25:16,086: INFO: transfer_leraning]: >>>>> stage STAGE_NAME started <<<<<
+[2022-01-29 00:25:16,088: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2022-01-29 00:25:16,903: INFO: transfer_leraning]: >>>>> stage STAGE_NAME completed!<<<<<
+
+[2022-01-29 00:26:28,341: INFO: transfer_leraning]: 
+********************
+[2022-01-29 00:26:28,341: INFO: transfer_leraning]: >>>>> stage STAGE_NAME started <<<<<
+[2022-01-29 00:26:28,343: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2022-01-29 00:26:29,203: INFO: transfer_leraning]: >>>>> stage STAGE_NAME completed!<<<<<
+
+[2022-01-29 00:29:08,906: INFO: transfer_leraning]: 
+********************
+[2022-01-29 00:29:08,907: INFO: transfer_leraning]: >>>>> stage STAGE_NAME started <<<<<
+[2022-01-29 00:29:08,908: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2022-01-29 00:29:09,736: INFO: transfer_leraning]: >>>>> stage STAGE_NAME completed!<<<<<
+
+[2022-01-29 00:37:21,952: INFO: transfer_leraning]: 
+********************
+[2022-01-29 00:37:21,952: INFO: transfer_leraning]: >>>>> stage STAGE_NAME started <<<<<
+[2022-01-29 00:37:21,954: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2022-01-29 00:37:23,242: ERROR: transfer_leraning]: name 'update_odd_even_labels' is not defined
+Traceback (most recent call last):
+  File ".\transfer_leraning.py", line 81, in <module>
+    main(config_path=parsed_args.config)
+  File ".\transfer_leraning.py", line 58, in main
+    y_train_bin, y_test_bin, y_valid_bin = update_odd_even_labels([y_train, y_test, y_valid])
+NameError: name 'update_odd_even_labels' is not defined
+[2022-01-29 00:38:12,207: INFO: transfer_leraning]: 
+********************
+[2022-01-29 00:38:12,207: INFO: transfer_leraning]: >>>>> stage STAGE_NAME started <<<<<
+[2022-01-29 00:38:12,209: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2022-01-29 00:38:51,360: INFO: transfer_leraning]: >>>>> stage STAGE_NAME completed!<<<<<
+
+[2022-01-29 00:40:08,099: INFO: transfer_leraning]: 
+********************
+[2022-01-29 00:40:08,099: INFO: transfer_leraning]: >>>>> stage STAGE_NAME started <<<<<
+[2022-01-29 00:40:08,101: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2022-01-29 00:40:43,980: INFO: transfer_leraning]: >>>>> stage STAGE_NAME completed!<<<<<
+
+[2022-01-29 00:41:28,773: INFO: transfer_leraning]: 
+********************
+[2022-01-29 00:41:28,773: INFO: transfer_leraning]: >>>>> stage STAGE_NAME started <<<<<
+[2022-01-29 00:41:28,775: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2022-01-29 00:42:07,910: INFO: transfer_leraning]: >>>>> stage STAGE_NAME completed!<<<<<
+
+[2022-01-29 00:45:13,812: INFO: transfer_leraning]: 
+********************
+[2022-01-29 00:45:13,812: INFO: transfer_leraning]: >>>>> stage transfer learning started <<<<<
+[2022-01-29 00:45:13,813: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2022-01-29 00:46:09,797: INFO: transfer_leraning]: >>>>> stage transfer learning completed!<<<<<
+
